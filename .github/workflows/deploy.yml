@@ -22,7 +22,7 @@ jobs:
     - name: Install Dependencies
       run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist --ignore-platform-req=ext-imagick
     - name: Directory Permissions
-      run: chmod -R 777 storage bootstrap/cache deploy
+      run: chmod -R 777 storage bootstrap/cache
 
     - name: Pre Deploy
       uses: appleboy/ssh-action@master
